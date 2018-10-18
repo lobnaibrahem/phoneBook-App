@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="">
+        <!----------cssLinks----------->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+        <!----------CONTAINER-DIV----------->
+        <div class="container pt-5">
+        <h2>
+            PhoneBook
+            <button onclick="showHide()" id="buttonToggle" class="btn btn-warning btn-sm float-right">
+                Hide
+                <i class="fas fa-arrow-alt-circle-up"></i>
+            </button>
+        </h2>
+            <div class="clearfix"></div>
+            <div id="form-container">
+                <div class="form-group">
+                    <label>UserName:</label>
+                    <input id="uname" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Phone number:</label>
+                    <input id="uphone" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>E-mail:</label>
+                    <input id="umail" type="text" class="form-control">
+                </div>
+                 <div class="form-group">
+                    <label>Location:</label>
+                    <input id="ulocation" type="text" class="form-control">
+                </div>
+                <button id="data-button" onclick="record()" class="btn btn-info float-right">Submit</button>
+                <div class="clearfix"></div>
+            </div>
+            <table class="table mt-4 text-center table-striped">
+                <thead class="text-center">
+                    <th><i class="far fa-user mr-1"></i>Name:</th>
+                    <th><i class="fa fa-phone mr-1"></i>Phone</th>
+                    <th><i class="far fa-envelope mr-1"></i>E-mail:</th>
+                    <th><i class="fas fa-map-marker-alt mr-1"></i>Location:</th>
+                    <th><i class="fas fa-wrench"></i></th>
+                </thead>
+                <tbody id="formData">
+                </tbody>
+            </table>
+        </div>
+        <!----------EndOfContainerDiv----------->
+        <!----------jsFiles----------->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
